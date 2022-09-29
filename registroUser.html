@@ -45,8 +45,272 @@
     <!-- login -->
     
     
-    
-    <!-- FOOTER -->
+              <script type="text/javascript">
+                  function cerrarSesion() {
+      
+                      var txt = 'ctl00_lsUsuario';
+                      var arg = document.getElementById(txt);
+                      if (arg != null) {
+                          arg.click();
+                      }
+                  }
+      
+      
+              </script>
+      
+              
+              <script type="text/javascript">
+                  
+                  function funcionRecargaPagActual() {
+                      window.open(window.location, "_self")
+                  }
+              </script>
+      
+              </div--><div id="ctl00_rwmAdminVentanas_prompttemplate" style="display:none;">
+               <div class="rwDialogPopup radprompt">			
+                      <div class="rwDialogText">
+                      {1}				
+                      </div>		
+                      <div>
+                          <script type="text/javascript">
+                          function RadWindowprompt_detectenter(id, ev, input)
+                          {							
+                              if (!ev) ev = window.event;                
+                              if (ev.keyCode == 13)
+                              {															        
+                                  var but = input.parentNode.parentNode.getElementsByTagName("A")[0];					        
+                                  if (but)
+                                  {							
+                                      if (but.click) but.click();
+                                      else if (but.onclick)
+                                      {
+                                          but.focus(); var click = but.onclick; but.onclick = null; if (click) click.call(but);							 
+                                      }
+                                  }
+                                 return false;
+                              } 
+                              else return true;
+                          }	 
+                          </script>
+                          <input title="Enter Value" onkeydown="return RadWindowprompt_detectenter('{0}', event, this);" type="text"  class="rwDialogInput" value="{2}" />
+                      </div>
+                      <div>
+                          <a onclick="$find('{0}').close(this.parentNode.parentNode.getElementsByTagName('input')[0].value);"				
+                              class="rwPopupButton" href="javascript:void(0);" ><span class="rwOuterSpan"><span class="rwInnerSpan">##LOC[OK]##</span></span></a>
+                          <a onclick="$find('{0}').close(null);" class="rwPopupButton"  href="javascript:void(0);"><span class="rwOuterSpan"><span class="rwInnerSpan">##LOC[Cancel]##</span></span></a>
+                      </div>
+                  </div>				       
+              </div><div id="ctl00_rwmAdminVentanas_confirmtemplate" style="display:none;">
+              <div class="rwDialogPopup radconfirm">			
+                  <div class="rwDialogText">
+                  {1}				
+                  </div>						
+                  <div>
+                      <a onclick="$find('{0}').close(true);"  class="rwPopupButton" href="javascript:void(0);" ><span class="rwOuterSpan"><span class="rwInnerSpan">##LOC[OK]##</span></span></a>
+                      <a onclick="$find('{0}').close(false);" class="rwPopupButton"  href="javascript:void(0);"><span class="rwOuterSpan"><span class="rwInnerSpan">##LOC[Cancel]##</span></span></a>
+                  </div>
+              </div>		
+              </div><input id="ctl00_rwmAdminVentanas_ClientState" name="ctl00_rwmAdminVentanas_ClientState" type="hidden" />
+      </div>
+      
+      
+              
+      
+              <div id="layoutSidenav">
+                  
+                  <div id="layoutSidenav_content" class="d-flex flex-column">
+      
+                      <!-- Main Content -->
+                      <div id="content">
+      
+                          <!-- Topbar -->
+                          <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+      
+                              <!-- Sidebar Toggle (Topbar) -->
+                              <button type="button" id="sidebarToggle" class="btn btn-link d-md-none rounded-circle mr-3" style="z-index:99999">
+                                  <i class="fa fa-bars"></i>
+                              </button>
+      
+                              <!-- Topbar Search --> 
+                              <div class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100">
+                                  <span id="ctl00_Label1" style="color:#858796;font-size: 26px; font-weight: 700">PORTAL DE SERVICIOS</span>
+                              </div>
+      
+                              <!-- Topbar Navbar -->
+                              <ul class="navbar-nav ml-auto">
+      
+      
+                                  <!-- Nav Item - Información de Usuario -->
+                                  <li class="nav-item dropdown no-arrow" style="font-size: 0.9rem !important;">
+                                      <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <div>
+                                              <div class="mr-2 d-none d-lg-block text-gray-600 small">
+                                                  <b>
+                                                      <span id="ctl00_lblLogin">1013586724</span>
+                                                  </b>
+                                              </div>
+                                                    
+                                              <div class="mr-2 d-none d-lg-block text-gray-600 small">
+                                                  <span id="ctl00_lblEmpleado">LIZETH MARIA DIAZ GUTIERREZ</span>
+                                              </div>
+                                              <div class="mr-2 d-none d-lg-block text-gray-600 small">
+                                                  <span id="ctl00_lblCargo">PACIENTE</span>
+                                              </div>
+                                          </div>
+                                          
+                                      </a>
+
+                                  </li>
+                              </ul>
+                          </nav>
+                          <!-- End of Topbar -->
+                          
+                          <!-- Inicio - Contenido Página -->
+                          <div class="container-fluid">
+      
+                              <!-- Contenido - Row -->
+                              <div class="row">
+      
+                                 
+                                  <script type="text/javascript">
+      //<![CDATA[
+      Sys.WebForms.PageRequestManager._initialize('ctl00$RadScriptManager1', 'aspnetForm', ['tctl00$pnlupdMensajeDocum',''], [], [], 90, 'ctl00');
+      //]]>
+      </script>
+      
+      
+                                  <div style="width: 100%; text-align: center">
+                                      
+      
+          
+          
+          <div class="container-fluid" style="background-position: center top; margin: 0px auto; background-image: none; background-repeat: no-repeat; background-attachment: inherit;">
+              
+      
+                  
+                     
+                  
+                  
+                  <div class="col-12" style="justify-content:space-around;">
+                      <div class="row">
+      
+                          <!--  Empleados -->
+                          <div id="ctl00_cuerpo_divEmpleados1" class="col-xl-4 col-md-6 mb-4">
+                              <div class="card border-left-primary shadow h-100 py-1">
+                                  <div class="card-body">
+                                      <div class="row no-gutters align-items-center">
+                                          <div class="col mr-2 m-0 p-0">
+                                              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                  Personal de Salud</div>
+                                          </div>
+                                          
+                                          <div class="col-auto">
+                                            <img class="icono" src="./img/userplus.png" width="60px" height="70px">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="card-footer d-flex align-items-center justify-content-between">
+                                      
+                                      <a class="stretched-link text-primary" href='/PortalWeb/Empleados/Cumpleaños/CumpleanosEmpleados.aspx?codObjeto=S2AabgId+6zyH+YD+j1OXA==&codGrupo=APi9KfQyKkafVXWbu981ew=='>Registrar</a>
+                                      <div class="text-primary">
+                                          <i class="fas fa-angle-right"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+      
+                          <!--  - Pacientes -->
+                          <div id="ctl00_cuerpo_divEmpleados2" class="col-xl-4 col-md-6 mb-4">
+                              <div class="card border-left-success shadow h-100 py-1">
+                                  <div class="card-body">
+                                      <div class="row no-gutters align-items-center">
+                                          <div class="col mr-2">
+                                              <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                  <span>Pacientes</span>
+                                              </div>
+                                           </div>
+                                          <div class="col-auto">
+                                            <img class="icono" src="./img/paciente.png" width="60px" height="70px">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="card-footer d-flex align-items-center justify-content-between">
+                                      
+                                      <a class="stretched-link text-success" href='/PortalWeb/Eventos/ConsultarEvento.aspx?codObjeto=2qhXTA31UUxpkKFeGYAAmg==&codGrupo=APi9KfQyKkafVXWbu981ew=='>Registrar</a>
+                                      <div class="text-success">
+                                          <i class="fas fa-angle-right"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+      
+                          <!-- Familiares -->
+                          <div id="ctl00_cuerpo_divEmpleados3" class="col-xl-4 col-md-6 mb-4">
+                              <div class="card border-left-warning shadow h-100 py-1">
+                                  <div class="card-body">
+                                      <div class="row no-gutters align-items-center">
+                                          <div class="col mr-2">
+                                              <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                  
+                                                  <span>Familiares</span>
+                                              </div>
+                                          </div>
+                                          <div class="col-auto">
+                                            <img class="icono" src="./img/familiar.png" width="70px" height="60px">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="card-footer d-flex align-items-center justify-content-between">
+                                      
+                                      <a class="stretched-link text-warning" href='/PortalWeb/Menu/Favoritos.aspx?codObjeto=zj2AwWQTariJT0JSK0I0uA==&codGrupo=APi9KfQyKkafVXWbu981ew=='>Registrar</a>
+                                      <div class="text-warning">
+                                          <i class="fas fa-angle-right"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>  
+                      
+                          
+                          
+                          </div>
+      
+                      </div>
+                  </div>
+  
+  
+      
+                  
+      
+                  
+                  <div class="col-12">
+                      
+                  </div>
+      
+              </div>
+          </div>
+      
+          
+      
+      
+                                  </div>
+                                  
+                              
+                              </div>
+                              <!-- Contenido - Row -->
+                          
+                          </div>
+                          <!-- Fin  - Contenido Página -->
+                      
+                      </div>
+                      <!-- End of Main Content -->
+      
+                     
+                  </div>
+                  <!-- End of Content Wrapper -->
+              </div>
+              <!-- End of Page Wrapper -->
+<!-- FOOTER -->
     <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
         <p class="fs-7 px-3  pt-3">SIS - Servicios Integrales en Sistemas &copy; Todos Los Derechos Reservados 2022</p>
         <div id="iconos">
