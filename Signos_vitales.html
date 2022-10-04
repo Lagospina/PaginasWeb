@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signos Vitales</title>
+  <link rel="stylesheet" href="Signos_vitales.css">
+
+</head>
+<body>
+  <div class="tab-container">
+    <ul class="top">
+      <li id="arriba" class="top">Signos Vitales</li>
+
+    <div class="signos">
+        <div id="signos_V" class="content content-active">
+       
+          <form>
+            <div>
+              <label class="lab"for="name">Fecha:</label>
+              <input type="date" name="fecha" min="2018-03-25" max="2023-03-25" step="2"/>
+              <label class="lab"for="name">Hora</label>
+            </div> 
+            <div>
+              <label class="lab"for="name">F_Cardiaca (LPM)  </label>
+              <img class="icono" src="./img/fre_cardiaca.png" width="50px" height="50px">
+              <input class="bot" id="name" type="text" name="nam" >  
+            </div> 
+            <div>
+              <label class="lab"for="name">F_Respiratoria (RPM)  </label>
+              <img class="icono" src="./img/fre_respiratoria.png" width="50px" height="50px">
+              <input class="bot" id="name" type="text" name="nam" >
+            </div> 
+            <div>
+              <label class="lab"for="name">P_Arterial (mmHg)  </label>
+              <img class="icono" src="./img/pre_arterial.png" width="50px" height="50px">
+              <input class="bot" id="name" type="text" name="nam" >
+            </div> 
+            <div>
+              <label class="lab"for="name">Termperatura (ºC)  </label>
+              <img class="icono" src="./img/temperatura.png" width="50px" height="50px">
+              <input class="bot" id="name" type="text" name="nam" >  
+           </div> 
+          <div>
+              <label class="lab"for="name">Oximetria (%)  </label>
+              <img class="icono" src="./img/oximetria.png" width="50px" height="50px">
+              <input class="bot" id="name" type="text" name="nam" >
+           </div> 
+           <div>
+            <label class="lab"for="name">Glicemia (mg/dl)  </label>
+            <img class="icono" src="./img/glicemia.png" width="50px" height="50px">
+            <input class="bot" id="name" type="text" name="nam" >
+          </div> 
+          </form>
+
+        </div>
+
+    
+      </div>
+    </div>
+  <div>
+<script  src="Historia.js"></script>  
+</body>
+</html>

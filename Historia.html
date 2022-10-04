@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia Clínica</title>
+  <link rel="stylesheet" href="Historia.css">
+
+</head>
+<body>
+  <div class="tab-container">
+    <ul class="top">
+      <li id="arriba" class="top">Historia Clínica</li>
+    <ul class="options">
+        <li id="option1" class="option option-active">Datos Personales</li>
+        <li id="option2"class="option">Antecedentes</li>
+        <li id="option3" class="option">Exámen Físico</li> 
+        <li id="option4" class="option">Sugerencias</li> 
+        <li id="option5" class="option">Evolucion</li> 
+    </ul>
+
+    <div class="contents">
+        <div id="content1" class="content content-active">
+          <h3></h3>
+          <form>
+            <input class="controls" type="text" name="Cédula" id="Cédula" placeholder="Número de Documento"/> 
+            <input class="controls" type="text" name="Nombres" id="Nombres" placeholder="Nombres"/> 
+            <input class="controls" type="text" name="Apellidos" id="Apellidos" placeholder="Apellidos"/>
+            <input class="controls" type="text" name="Género" id="Genero" placeholder="Género"/>
+            <input class="controls" type="text" name="Celular" id="NumCel" placeholder="Número de Celular"/>
+            <input class="controls" type="text" name="Telefono" id="Tel" placeholder="Número de Telefono"/>
+            <input class="controls" type="text" name="Direccion" id="Dir" placeholder="Dirección"/>
+            <input class="controls" type="text" name="Ciudad" id="Ciu" placeholder="Cuidad"/>
+            <input class="controls" type="text" name="Departamento" id="Gdepa" placeholder="Departamento"/>
+            <input class="controls" type="text" Email="Correo" id="correo" placeholder="Correo electrónico"/>
+            <input class="controls" type="text" name="CedulaFliar" id="Fliar" placeholder="Nombre Familiar encargado"/>
+          </form>
+
+        </div>
+
+        <div id="content2" class="content">
+          <form1>
+          <div>
+            <label class="lab"for="name">Médicos:  </label>
+            <input class="bot" id="name" type="text" name="nam" >
+            <label class="lab" for="name">Quirurgicos:  </label>
+            <input class="bot"id="nam" type="text" name="name">
+          </div>
+          <div>
+            <label class="lab" for="name">Transfusionales:  </label>
+            <input class="bot"id="na" type="text" name="nai">
+            <label class="lab"for="name">Inmunológicos:  </label>
+            <input class="bot"id="name" type="text" name="nam">
+          </div>
+          <div>
+            <label class="lab"for="name">Alérgicos:  </label>
+            <input class="bot"id="name" type="text" name="nam">
+            <label class="lab"for="name">Traumáticos:  </label>
+            <input class="bot"id="name" type="text" name="nam">
+          </div>
+          <div>
+            <label class="lab"for="name">Psicológicos:  </label>
+            <input class="bot"id="name" type="text" name="nam">
+            <label class="lab"for="name">Farmacológicos:  </label>
+            <input class="bot"id="name" type="text" name="nam">
+          </div>
+          <div>
+            <label class="lab"for="name">Vacunación:  </label>
+            <input class="bot"id="name" type="text" name="nam">
+            <label class="lab"for="name">Familiares:  </label>
+            <input class="bot"id="name" type="text" name="nam">
+          </div>
+          <div>
+            <label class="lab"for="name">tóxicos:  </label>
+            <input class="bot"id="name" type="text" name="nam">
+            <label class="lab"for="name">Otros:  </label>
+            <input class="bot"id="name" type="text" name="nam">
+          </div>
+          </form>
+        </div> 
+        <div id="content3" class="content">
+          <form>
+            <div>
+            <label class="lab"for="name">Inspeccion:</label>
+            <img class="icono" src="./img/Inspeccion.png" width="50px" height="50px">
+            <input class="bot" id="name" type="text" name="nam" >
+          </div>
+          <div>
+            <label class="lab" for="name">Palpacion:</label>
+            <img class="icono" src="./img/Palpacion.png" width="50px" height="50px">
+            <input class="bot"id="nam" type="text" name="name">
+          </div>
+          <div>
+            <label class="lab" for="name">Percusion:</label>
+            <img class="icono" src="./img/Percusion.png" width="50px" height="50px">
+            <input class="bot"id="nam" type="text" name="name">
+          </div>
+          <div>
+            <label class="lab" for="name">Ascultacion:</label>
+            <img class="icono" src="./img/Auscultacion.png" width="50px" height="50px">
+            <input class="bot"id="nam" type="text" name="name">
+          </div>
+          <div>
+            <label class="lab" for="name">Olfacion:</label>
+            <img class="icono" src="./img/Olfacion.png" width="50px" height="50px">
+            <input class="bot"id="nam" type="text" name="name">
+          </div>
+          <div>
+            <label class="lab" for="name">Medicion:</label>
+            <img class="icono" src="./img/medicion.png" width="50px" height="50px">
+            <input class="bot"id="nam" type="text" name="name">
+          </div>
+          </form>
+        </div>
+        <div id="content4" class="content">
+          <form>
+            <div>
+              <label class="lab1"for="name">Observaciones: </label>
+            </div>
+            <div>
+                <p><textarea name="comentario" rows="17" cols="72"> </textarea></p>
+            </div>
+            <div>
+            <img class="icono" src="./img/Sugerencias.png" width="90px" height="90px">
+          </div>
+          </form>
+        </div>
+        <div id="content5" class="content">
+          <form>
+            <div>
+              <p><textarea name="comentario" rows="20" cols="70"> </textarea></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  <div>
+
+  <div id="app">
+
+  </div>
+    <!--<script  src="Historia.js"></script>-->
+  <script type="text/javascript" src="vue.js"></script>
+  <script type="text/javascript" src="Historia.js"></script>
+</body>
+</html>

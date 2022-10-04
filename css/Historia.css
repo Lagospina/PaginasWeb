@@ -1,0 +1,140 @@
+:root{
+  --bg-body: #1a83c0;
+  --bg-cont: #1a6a99;
+  --bg-active: #0a4f77;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--bg-body);
+}
+
+.tab-container{
+  width: 600px;
+  height: 600px;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, .8);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.options{
+  display: flex;
+  width: 100%;
+  height: 10%;
+  list-style: none;
+}
+
+.option{
+  flex-grow: 10;
+  text-align: center;
+  line-height: 60px;
+  border: solid 1px rgba(4,51,78,.6);
+  color: #fff;
+  cursor: pointer;
+}
+.option-active{
+  background: var(--bg-active);
+  border-bottom: 1px solid rgba(7, 63, 95, .4);
+
+}
+.contents{
+  width: 100%;
+  height: 100%;
+}
+
+.content{
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: none;
+  padding: 0px;
+}
+.content-active{ 
+  background: var(--bg-active);
+  display: block;
+  margin:4px;
+  letter-spacing: 0,5px;
+  padding: 10px;
+  margin-left: 1px;
+  text-align: center; 
+  margin-bottom: 6px;
+}
+
+.content h3 {
+  text-align: center;
+  padding-bottom: 10 px;
+  border-bottom: solid 1px rgba(255, 255, 255, .3);
+  letter-spacing: 2px;
+  margin: 10px; 
+}
+.content form{
+  margin: 1px;
+  letter-spacing: 1px;
+}
+.content p{
+  margin:10px;
+  letter-spacing: 1px;
+}
+.controls {
+  width: 43%;
+  background: #24303c;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+.top{
+  flex-grow: 1;
+  line-height: 60px;
+  border: solid 1px rgba(4,51,78,.6);
+  color: #fff;
+  cursor: pointer;
+  text-align: center; 
+  
+}
+.bot{
+  width: 30%;
+  background: #24303c;
+  padding: 10px;
+  margin-left: 1px;
+  border-radius: 6px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+  
+}
+.lab{
+  color: rgb(250, 246, 246);
+  font-family: 'calibri';
+  font-size: 12px;
+  text-align: left;
+  display: inline-block;
+  
+}
+.lab1{
+  color: rgb(250, 246, 246);
+  font-family: 'calibri';
+  font-size: 18px;
+  text-align: left;
+  display: inline-block;
+  
+}
+
+label{
+  display: inline-block;
+  width: 80px;
+
+}
